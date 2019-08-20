@@ -62,6 +62,7 @@ def edit_video(self, project, changes):
             {'_id': project['_id']},
             {'$set': {
                 'processing.video': False,
+                'processing.thumbnails_timeline': False,
                 'metadata': metadata,
                 'thumbnails.timeline': [],
                 'version': project['version'] + 1

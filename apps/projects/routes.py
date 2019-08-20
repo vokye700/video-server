@@ -370,24 +370,24 @@ class RetrieveEditDestroyProject(MethodView):
                 'empty': True,
                 'schema': {
                     'width': {
-                        'type': 'integer',
+                        'type': 'float',
                         'min': app.config.get('MIN_VIDEO_WIDTH'),
                         'max': app.config.get('MAX_VIDEO_WIDTH'),
                         'required': True
                     },
                     'height': {
-                        'type': 'integer',
+                        'type': 'float',
                         'min': app.config.get('MIN_VIDEO_HEIGHT'),
                         'max': app.config.get('MAX_VIDEO_HEIGHT'),
                         'required': True
                     },
                     'x': {
-                        'type': 'integer',
+                        'type': 'float',
                         'required': True,
                         'min': 0
                     },
                     'y': {
-                        'type': 'integer',
+                        'type': 'float',
                         'required': True,
                         'min': 0
                     }
@@ -940,22 +940,22 @@ class RetrieveOrCreateThumbnails(MethodView):
                 'empty': True,
                 'schema': {
                     'width': {
-                        'type': 'integer',
+                        'type': 'float',
                         'required': True,
                         'min': app.config.get('MIN_VIDEO_WIDTH'),
                     },
                     'height': {
-                        'type': 'integer',
+                        'type': 'float',
                         'required': True,
                         'min': app.config.get('MIN_VIDEO_HEIGHT'),
                     },
                     'x': {
-                        'type': 'integer',
+                        'type': 'float',
                         'required': True,
                         'min': 0
                     },
                     'y': {
-                        'type': 'integer',
+                        'type': 'float',
                         'required': True,
                         'min': 0
                     }
